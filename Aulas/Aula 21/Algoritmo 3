@@ -1,14 +1,16 @@
-Function BuscaBinaria(x){
-esq =1
-dir =n
-enquanto esq <= dir faca{
-meio = (( esq +dir ) /2)
-se A[ meio ] == x entao
-devolve meio
-senao se x > A[ meio ] entao
-esq = meio + 1
-senao
-dir = meio - 1
-}
-14 devolve -1
-}
+1. Function BuscaBinaria(x){
+2. esq =1 **- {1} (Atribuição)**
+3. dir =n **- {1} (Atribuição)**
+4. enquanto esq <= dir faca{ **- {1} (Comparação)**
+5. meio = (( esq +dir ) /2) **- {3} (Atribução, 2xOperação)**
+6. se A[ meio ] == x entao **- {2} (Acesso, Comparação)**
+7. devolve meio
+8. senao se x > A[ meio ] entao **- {2} (Comparação, Acesso)**
+9. esq = meio + 1 **- {2} (Atribuição, Operação)**
+10. senao
+11. dir = meio - 1 **- {2} (Comparação, Operação)**
+12. }
+13. 14 devolve -1 
+14. }
+min 8
+pior caso 28
