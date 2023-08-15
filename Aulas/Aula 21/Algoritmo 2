@@ -1,10 +1,28 @@
 1. Function BuscaLinerarEmOrdem(K){
-2. i=1 **- {1} (Atribuição)**
-3. enquanto i <= n e K >=A[i] { **- {3} (2xComparação, Acesso)**
-4. se A[i]==k entao **- {2} (Acesso, Comparação)**
+2. **i=1** **- {1} (Atribuição)**
+3. enquanto **i <= n** e **K >=A[i]** { **- {3} (2xComparação, Acesso)**
+4. se **A[i]==k** entao **- {2} (Acesso, Comparação)**
 5. devolve i
 6. }
-7.  i = i + 1 **- {2} (Atribuição, Operação)**
+7.  **i = i + 1** **- {2} (Atribuição, Operação)**
 8. }
 9. devolve -1
 10. }
+
+total 5+3*A[i]==k (5 mais 3 vezes posição de i que contem valor igual à k)
+ou
+3 caso K<=A[i]
+
+ *ex:*
+
+*n = 10*
+*A[3] = k*
+
+*1º instrução:* i = 1
+*2º instrução:* 1 <= 10
+*3º instrução:* A[1]
+*4º instrução:* A[1] != k
+*5º instrução:* i = 2
+*6º instrução:* 2 < 10
+*7º instrução:* A[2]
+*8º instrução:* A[2] = k
