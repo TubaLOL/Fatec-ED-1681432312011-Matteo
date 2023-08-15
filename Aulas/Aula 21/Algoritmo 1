@@ -1,9 +1,25 @@
-Function BuscaLinerar(K){
-**i = 1** **- {1} (Atribuição)**
-for (**i < n**; i++){ **- {2} (Comparação, Operação)**
- se **A[i]** **== k** { **- {2} (Acesso, Comparação)**
- devolve i
- }
- }
-Devolve i
-}
+1. Function BuscaLinerar(K){
+2. **i = 1** **- {1} (Atribuição)**
+3. for (**i < n**; **i++**){ **- {2} (Comparação, Operação)**
+4.  se **A[i]** **== k** { **- {2} (Acesso, Comparação)**
+5.  devolve i
+6.  }
+7.  }
+8. Devolve i
+9. }
+
+**total: 4*A[i]==k (4 vezes posição i que contem valor igual à k)**
+
+ *ex:*
+
+*n = 10*
+*A[2] = k*
+
+*1º instrução:* i = 1
+*2º instrução:* 1 < 10
+*3º instrução:* A[1]
+*4º instrução:* A[1] != k
+*5º instrução:* i = 2
+*6º instrução:* 2 < 10
+*7º instrução:* A[2]
+*8º instrução:* A[2] = k
