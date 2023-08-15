@@ -1,0 +1,14 @@
+Function BuscaBinaria(x){
+esq =1
+dir =n
+enquanto esq <= dir faca{
+meio = (( esq +dir ) /2)
+se A[ meio ] == x entao
+devolve meio
+senao se x > A[ meio ] entao
+esq = meio + 1
+senao
+dir = meio - 1
+}
+14 devolve -1
+}
