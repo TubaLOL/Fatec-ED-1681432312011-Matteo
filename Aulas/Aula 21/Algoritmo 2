@@ -1,10 +1,10 @@
-Function BuscaLinerarEmOrdem(K){
-i=1
-enquanto i <= n e K >=A[i] {
-se A[i ]==k entao
-devolve i
-}
- i = i + 1 7
-}
-devolve -1
-}
+1. Function BuscaLinerarEmOrdem(K){
+2. i=1 **- {1} (Atribuição)**
+3. enquanto i <= n e K >=A[i] { **- {3} (2xComparação, Acesso)**
+4. se A[i]==k entao **- {2} (Acesso, Comparação)**
+5. devolve i
+6. }
+7.  i = i + 1 **- {2} (Atribuição, Operação)**
+8. }
+9. devolve -1
+10. }
