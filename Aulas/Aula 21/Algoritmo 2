@@ -1,0 +1,10 @@
+Function BuscaLinerarEmOrdem(K){
+i=1
+enquanto i <= n e K >=A[i] {
+se A[i ]==k entao
+devolve i
+}
+ i = i + 1 7
+}
+devolve -1
+}
