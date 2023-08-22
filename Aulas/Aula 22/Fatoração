@@ -1,0 +1,14 @@
+package hhhyyy;
+import javax.swing.JOptionPane;
+
+public class yyyy {
+	public static void main(String[]args) {
+		int numero = JOptionPane.showInputDialog("N fatorial: ");
+		while (numero > 0) {
+			numero = numero + (numero-1);
+				numero --;
+		}
+		JOptionPane.showMessageDialog("Fatorial: " + numero);
+	}
+
+}
