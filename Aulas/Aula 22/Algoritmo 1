@@ -1,0 +1,11 @@
+1. Function BuscaLinerar(A,n,x){
+2. **i = 1** - {1l}
+3. Enquanto **i <= n** faça - {1ln}
+4. Se **A[i] == x** então - {2ln}
+5. **Devolva i** - {l}
+6. **I = i + 1** - {2ln}
+7. **Devolva -1** - {1l}
+
+1l + 1ln + 2ln + 2ln - 1l **(-1l pois não é possível retornar i e -1 em uma única excução do código)**
+
+**Total = 5ln**
