@@ -1,1 +1,12 @@
+**Function BuscaLinerarEmOrdem(A,n,x)**
 
+1. i=1 {1l}
+2. enquanto i <= e x >= A[i] faça {3ln-1l}
+3. Se A[i] == x então {2ln}
+4. Devolva i {1l}
+5. I = i = 1 {2ln}
+6. Devolva -1 {1l}
+
+1l + 3ln - 1l + 2ln + 1l + 2ln - 1l **(-1l pois não é possível retornar i e -1 em uma única excução do código)**
+
+**Total = 7ln**
