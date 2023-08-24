@@ -1,0 +1,26 @@
+**Esq = 1** - **{1l}**
+**Dir = 7** - **{1l}**
+Enquanto **Esq <= Dir** faça - **{1ln}**
+ **Meio = (Esq + Dir) / 2 -** **{3ln}**
+ Se **A[Meio] == x** então - **{2ln}**
+ **Devolve Meio** - **{1l}**
+ Senao se **x > A[meio]** então - **{2ln}**
+ **Esq = meio + 1** - **{2ln}**
+ Senao 
+ **Dir = meio - 1** - **{2ln}**
+**Devolva -1** - **{1l}**
+
+**10ln - l**
+
+**Melhor Tempo = 9**
+**Pior Tempo = 29**
+
+**Tabela de Tempo Dependendo da Posição que A[meio] == x**
+
+1 - n=3 = 10l X 3 - 1l = 29l
+2 - n=2 = 10l X 2 - 1l = 19l
+3 - n=3 = 10l X 3 - 1l = 29l
+4 - n=1 = 10l X 1 - 1l = 9l
+5 - n=3 = 10l X 3 - 1l = 29l
+6 - n=2 = 10l X 2 - 1l  = 19l
+7 - n=3 = 10l X 3 - 1l = 29ll
