@@ -1,0 +1,22 @@
+package hhhyyy;
+
+public class classe_do_xesque {
+		public static void main(String[]args) {
+
+				int aux = 45;
+				int total = 45;
+				
+				while (total != 0) {
+
+					if (aux % 2 == 0) {
+						System.out.println("0");
+					}
+					else {
+						System.out.println("1");
+					}
+					total = aux/2;
+					aux = total;
+				}
+				}
+		
+		}
