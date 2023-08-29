@@ -9,10 +9,10 @@ public class classe_do_xesque {
 				while (total != 0) {
 
 					if (aux % 2 == 0) {
-						System.out.printl("0");
+						System.out.print("0");
 					}
 					else {
-						System.out.println("1");
+						System.out.print("1");
 					}
 					total = aux/2;
 					aux = total;
