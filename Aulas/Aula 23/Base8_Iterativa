@@ -3,26 +3,26 @@ package hhhyyy;
 public class classe_do_xesque {
 		public static void main(String[]args) {
 
-				int total = 102;
-				int aux = total;
-				int numero1 = 0;
-				int numero2 = 0;
+			int total = 213;
+			int aux = total;
+			int numero1 = 0;
+			int numero2 = 0;
+			
+			while (total >= 8) {
 				
-				while (total >= 8) {
-					
-
-					if (aux / 8 > 1) {
-						numero1 ++;
-					}
-					else {
-						numero2 = numero1 / 8;
-						System.out.println(numero2);
-						System.out.println(numero1-7);
-						System.out.println(total-8);
-					}
-					total = aux-8;
-					aux = total;
+				if (aux / 8 > 1) {
+					numero1 ++;
 				}
+				else {
+					numero2 = numero1 / 8;
+					numero1 = numero1 % 8;
+					System.out.print(numero2);
+					System.out.print(numero1+1);
+					System.out.print(total-8);
 				}
-		
-		}
+				total = aux-8;
+				aux = total;
+			}
+			}
+	
+				}
