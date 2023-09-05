@@ -1,1 +1,40 @@
-
+public class no {
+	int esq = 0;
+	int dir = 0;
+	int num;
+	int[] inf = {20,15,25,22,17};
+	
+	public int inserir() {
+		int num =  9;
+		return num;
+	}
+	public void setEsq(int esq) {
+		this.esq = esq;
+	}
+	public void setDir(int dir) {
+		this.dir = dir;
+	}
+	public void setInf(int[] inf) {
+		this.inf = inf;
+	}
+	public int getEsq() {
+		return esq;
+	}
+	public int getDir() {
+		return dir;
+	}
+	public int[] getInf() {
+		return inf;
+	}
+}
+	while (inf =! 0) {
+	if (inf > num) {
+		num = esq;
+	}
+	else {
+		num = dir;
+	}
+	System.out.println("Número:" + inf + "Esquerda:" + esq + "Direita:" + dir);
+}
+}
+}
