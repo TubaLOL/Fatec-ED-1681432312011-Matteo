@@ -1,0 +1,85 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    public static class No {
+        // Atributos Nó
+        int conteudo;
+        No noEsquerda;
+        No noDireita;
+
+        // Construtor
+        public No(int conteudo) {
+            this.conteudo = conteudo;
+            this.noEsquerda = null;
+            this.noDireita = null;
+        }
+
+        // ArrayList
+        String a;
+        Integer[] nums = {};
+
+        private static Integer[] append(Integer[] arr, int element) {
+            List<Integer> list = new ArrayList<>(Arrays.asList(arr));
+            list.add(element);
+            return list.toArray(new Integer[0]);
+        }
+
+        // Funções
+        public void PegaValor() {
+            a = JOptionPane.showInputDialog("Insira números não repetidos, digite 'sair' para encerrar");
+            while (!a.equalsIgnoreCase("Sair")) {
+                nums = append(nums, Integer.parseInt(a));
+                System.out.println(Arrays.toString(nums));
+                a = JOptionPane.showInputDialog("Insira números não repetidos, digite 'sair' para encerrar");
+            }
+        }
+
+        public static No construirArvore(Integer[] nums) {
+            No raiz = null;
+            for (Integer num : nums) {
+                raiz = inserir(raiz, num);
+            }
+            return raiz;
+        }
+
+        private static No inserir(No no, int valor) {
+            if (no == null) {
+                return new No(valor);
+            }
+            if (valor < no.conteudo) {
+                no.noEsquerda = inserir(no.noEsquerda, valor);
+            } else if (valor > no.conteudo) {
+                no.noDireita = inserir(no.noDireita, valor);
+            }
+            return no;
+        }
+    }
+
+    public static void EmOrdem(No raiz) {
+        EmOrdemSeq(raiz);
+    }
+
+    private static void EmOrdemSeq(No raiz) {
+        if (raiz != null) {
+            EmOrdemSeq(raiz.noEsquerda);
+            System.out.print(raiz.conteudo + " ");
+            EmOrdemSeq(raiz.noDireita);
+        }
+    }
+
+    public static void main(String[] args) {
+        No no = new No(-1);
+        no.PegaValor();
+        Integer[] nums = no.nums;
+
+        No raiz = No.construirArvore(nums);
+
+        System.out.println("Árvore em ordem:");
+        EmOrdem(raiz);
+    }
+}
+
